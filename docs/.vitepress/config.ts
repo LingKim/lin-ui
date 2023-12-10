@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import vueJsx from '@vitejs/plugin-vue-jsx'
 import { fileURLToPath, URL } from 'node:url'
 import { containerPreview, componentPreview } from '@vitepress-demo-preview/plugin'
 
@@ -13,6 +14,7 @@ export default defineConfig({
     }
   },
   vite:{
+    plugins:[vueJsx()],
     resolve: {
       alias: {
         '@': fileURLToPath(new URL('../../src', import.meta.url))
