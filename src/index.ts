@@ -2,6 +2,7 @@ import type { App } from 'vue'
 
 import Button from '@/components/button'
 import Collapse, { CollapseItem } from './components/collapse'
+import './style/index.scss'
 
 const components = [Button, Collapse, CollapseItem]
 
